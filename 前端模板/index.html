@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	
+	<!-- css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="css/jcarousel.css" rel="stylesheet" />
+	<link href="css/flexslider.css" rel="stylesheet" />
+	<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+<div id="wrapper" class="home-page">
+
+	<!--最上面-->
+	<div class="topbar">
+  	<div class="container">
+   	 <div class="row">
+      <div class="col-md-12">
+        <p class="pull-left" style="font-style: italic;opacity: 0.7;color: white;">Vaccination management system</p>
+        <p class="pull-right"><a href="javascript:void(0)" id="signBtn">注册</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" id="adminBtn">登录</a></p>
+      </div>
+    	</div>
+  	</div>
+	</div>
+	
+	<!--注册框-->
+	<div id="sign" class="sign">	
+	<form  class="sign-form" >
+		<h3>注册
+		<a href="javascript:void(0)"><i class="fa fa-times pull-right" aria-hidden="true" id="closeBtn" style="color: #000000;"></i></a>
+		<hr style="border-top: 2px solid rgba(0, 0, 0, 0.1);"/>
+		</h3>
+		<h6>
+			<label for="inputName">用户名</label>
+			<input type="text" name="name" class="form-control" id="inputName" placeholder="只能为数字、英文字母,特殊字符不可以使用" />
+			
+		</h6>
+		<h6>
+			<label for="inputEmail">邮箱</label>
+			<input type="email" name="email" class="form-control" id="inputEmail" placeholder="注册邮箱"/>
+			
+		</h6>
+		<h6>
+			<label for="inputPassword">密码</label>
+			<input type="password" name="password" class="form-control" id="inputPassword" placeholder="不得少于8个字符"  />
+			
+		</h6>
+		<div class="sign-submit">
+			<input type="button" class="btn btn-primary btn-block signsubmit-loader" name="submit" value="快速注册" />
+			<input type="hidden" name="action" value="signup" />
+		</div>
+	</form>
+	</div>
+	
+	<!--登录框-->
+	<div id="login" class="login">	
+	<form class="login-form">
+		<h3>登录
+		
+		<a href="javascript:void(0)"><i class="fa fa-times pull-right" aria-hidden="true" id="closeBtn" style="color: #000000;"></i></a>
+		<hr style="border-top: 2px solid rgba(0, 0, 0, 0.1);"/>
+		</h3>
+		<!--<h6>
+			<label for="inputName">用户名</label>
+			<input type="text" name="name" class="form-control" id="inputName" placeholder="用户名" />
+			
+		</h6>-->
+		<h6>
+			<label for="inputEmail">邮箱</label>
+			<input type="email" name="email" class="form-control" id="inputEmail" placeholder="登录邮箱"/>
+			
+		</h6>
+		<h6>
+			<label for="inputPassword">密码</label>
+			<input type="password" name="password" class="form-control" id="inputPassword" placeholder="登录密码"  />
+			
+		</h6>
+		<div class="sign-submit">
+			<label class="pull-left">
+				<input type="checkbox" checked="checked" name="remember" value="forever" />
+				记住我
+			</label>
+			<input type="button" class="btn btn-primary signsubmit-loader pull-right" style="margin-right: 2%;" name="submit" value="登录" />
+			<input type="hidden" name="action" value="signin" />
+			
+		</div>
+		
+	</form>
+	</div>
+	<div id="bg" class="bg">sada</div>
+	
+	<!--导航栏-->
+	<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+            	
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html" style="color: #2B96CC;"><img src="img/logo.jpg" alt="logo" style="margin-top:-3px;height: 50px;"/>&nbsp;疫苗接种管理系统</a>
+                </div>
+                
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">首页</a></li> 
+						<li><a href="introduce.html">疫苗介绍</a></li>
+						<li class="dropdown"><a href="#002" data-toggle="dropdown" class="dropdown-toggle">疫苗种类 <b class="caret"></b></a>
+                        	<ul class="dropdown-menu">
+                            	<li><a href="type1.html">一类疫苗</a></li>
+                            	<li><a href="type2.html">二类疫苗</a></li>
+                        	</ul>
+                    	</li> 
+                        <li><a href="about.html">疫苗接种</a></li>
+                        <li><a href="#004">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header>
+	
+	<!--banner栏-->
+	<section id="banner">
+        <div id="main-slider" class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="img/banner1.jpg" alt="" />
+                <div class="flex-caption">
+                    <h3>成人疫苗</h3> 
+					<p>你一定要知道的成人疫苗有哪些？</p> 
+					 
+                </div>
+              </li>
+              <li>
+                <img src="img/banner2.jpg" alt="" />
+                <div class="flex-caption">
+                    <h3>儿童疫苗</h3> 
+					<p>小儿接种疫苗的困惑...</p> 
+					 
+                </div>
+              </li>
+            </ul>
+        </div>
+ 
+	</section> 
+
+	<!--介绍栏-->
+	<section id="call-to-action-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-sm-9">
+					<h3>介绍</h3>
+					<p>医生为你注射疫苗，预防疾病，叫做疫苗接种或防疫注射。疫苗含有无害的死病菌或者是由无害的死病菌中提炼的物质，能使身体产生天然的防御能力对抗病菌。注射后，身体仿佛受到病菌入侵一样，开始产生杀死病菌的抗体；身体又会制造有保护性的白细胞，能够抵抗某类传染病。日后如果真的遇上同类病菌，身体便能立刻消灭病菌。</p>
+				</div>
+				<div class="col-md-2 col-sm-3">
+					<a href="introduce.html" class="btn btn-primary">Read More</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--四组内容栏-->
+	<section id="content">
+	<div class="container">
+	    	<div class="row">
+			<div class="col-md-12">
+				<div class="aligncenter"><h2 class="aligncenter">疫苗管理</h2></div>
+				<br/>
+			</div>
+		</div>
+			<div class="row">
+		<div class="skill-home"> <div class="skill-home-solid clearfix"> 
+		<div class="col-md-3 text-center">
+		<span class="icons c1"><i class="fa fa-ambulance"></i></span> <div class="box-area">
+		<h3><a href="introduce.html" style="color: black;opacity: 0.7;">简介</a></h3> <span>疫苗是指用各类病原微生物制作的用于预防接种的生物制品。疫苗分为活疫苗和死疫苗两种。</span></div>
+		</div>
+		<div class="col-md-3 text-center"> 
+		<span class="icons c2"><i class="fa fa-users"></i></span> <div class="box-area">
+		<h3><a href="type1.html" style="color: black;opacity: 0.7;">一类疫苗</a></h3> <span>政府免费向公民提供，公民应当依照政府的规定受种的疫苗。</span></div>
+		</div>
+		<div class="col-md-3 text-center"> 
+		<span class="icons c3"><i class="fa fa-trophy"></i></span> <div class="box-area">
+		<h3><a href="type2.html" style="color: black;opacity: 0.7;">二类疫苗</a></h3> <span>指由公民自费并且自愿受种的其他疫苗。二类疫苗中有可替代一类疫苗的选择，但二类疫苗中也有疫苗可供选择。</span></div>
+		</div>
+		<div class="col-md-3 text-center"> 
+		<span class="icons c4"><i class="fa fa-globe"></i></span> <div class="box-area">
+		<h3><a href="#" style="color: black;opacity: 0.7;">注意事项</a></h3> <span></span>
+		</div></div>
+		</div></div>
+		</div> 
+	 
+
+	</div>
+	</section>
+	
+	<!--接种内容栏-->
+	<section class="section-padding gray-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h2>疫苗接种</h2>
+						<p>接种疫苗是预防和控制传染病最经济、有效的公共卫生干预措施，<br>对于家庭来说也是减少成员疾病发生、减少医疗费用的有效手段。</p>
+					</div>
+				</div>
+			</div><br />
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="about-text">
+						<p>疫苗接种，是将疫苗制剂接种到人或动物体内的技术，使接受方获得抵抗某一特定或与疫苗相似病原的免疫力，借由免疫系统对外来物的辨认，进行抗体的筛选和制造，以产生对抗该病原或相似病原的抗体，进而使受注射者对该疾病具有较强的抵抗能力。</p>
+
+						<ul>
+							<li><a href="#">儿童疫苗</a></li>
+							<li><a href="#">疫苗接种时间表</a></li>
+							<li><a href="#">疫苗接种提示</a></li>
+							<li><a href="#">免疫反应</a></li>
+						</ul>
+						<a href="about.html" class="btn btn-primary">Learn More</a>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="about-image">
+						<img src="img/insert.jpg" alt="About Images">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+	
+	<!--三栅栏-->
+	<div class="about home-about">
+		<div class="container">	
+			<div class="row">
+				<div class="col-md-4">
+				<!-- Heading and para -->
+					<div class="block-heading-two">
+						<h3><span>热点关注</span></h3>
+					</div>
+					<div class="panel-group" id="accordion-alt3">
+					<!-- Panel. Use "panel-XXX" class for different colors. Replace "XXX" with color. -->
+						<div class="panel">	
+						<!-- Panel heading -->
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseOne-alt3">
+								<i class="fa fa-angle-right"></i>事件一
+								</a>
+								</h4>
+							</div>
+							<div id="collapseOne-alt3" class="panel-collapse collapse">
+							<!-- Panel body -->
+								<div class="panel-body">
+									Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseTwo-alt3">
+								<i class="fa fa-angle-right"></i> 事件二
+								</a>
+								</h4>
+							</div>
+								<div id="collapseTwo-alt3" class="panel-collapse collapse">
+									<div class="panel-body">
+										Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+									</div>
+								</div>
+							</div>
+						
+						<div class="panel">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseThree-alt3">
+								<i class="fa fa-angle-right"></i> 事件三
+								</a>
+								</h4>
+							</div>
+						<div id="collapseThree-alt3" class="panel-collapse collapse">
+							<div class="panel-body">
+								Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+							</div>
+						</div>
+						</div>
+								  
+						<div class="panel">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseFour-alt3">
+								<i class="fa fa-angle-right"></i> 事件四
+								</a>
+								</h4>
+							</div>
+							<div id="collapseFour-alt3" class="panel-collapse collapse">
+								<div class="panel-body">
+									Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+							
+				<div class="col-md-4">
+					<div class="block-heading-two">
+						<h3><span>资讯快报</span></h3>
+					</div>		
+					<p>1111</p>
+				</div>
+							
+				<div class="col-md-4">
+					<div class="info-box">
+						<h3><span class="fa fa-clock-o"></span> 日历</h3>
+
+    			</div>
+				</div>
+
+						<hr>
+					</div>
+				</div>
+							
+			</div>			 
+		</div>					
+	</div>
+					
+					
+	<!--页脚-->
+	<footer>	
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						<p>
+							Copyright &copy; 2016.Company name All rights reserved.More Templates - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<ul class="social-network">
+						<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+<!--						<li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+-->					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+</div>
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>  
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/animate.js"></script>
+<!-- Vendor Scripts -->
+<script src="js/modernizr.custom.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/custom.js"></script>
+<script type="text/javascript">
+	 var login=document.getElementById('login');
+        var sign=document.getElementById('sign');
+        var bg=document.getElementById('wrapper');
+           // 1.点击"点击，弹出登陆框",弹出登陆窗口和遮盖层
+        var adminBtn=document.getElementById('adminBtn');
+        var signBtn=document.getElementById('signBtn');
+        adminBtn.onclick=function(){
+            login.style.display="block";
+            bg.style.display="block";
+            return false;
+            }
+        signBtn.onclick=function(){
+            sign.style.display="block";
+            bg.style.display="block";
+            return false;
+            }
+           // 2.点击"关闭",隐藏登陆窗口和遮盖层
+        var closeBtn=document.getElementById('closeBtn');
+        closeBtn.onclick=function(){
+                 login.style.display="none";
+                 sign.style.display="none";
+                 bg.style.display="none";
+                 return false;
+           }
+</script>
+</body>
+</html>
