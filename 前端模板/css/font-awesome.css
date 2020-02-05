@@ -231,6 +231,9 @@
 .fa-times:before {
   content: "\f00d";
 }
+.fa-search:before {
+  content: "\f002";
+}
 .fa-search-plus:before {
   content: "\f00e";
 }
@@ -1335,4 +1338,7 @@
 }
 .fa-plus-square-o:before {
   content: "\f196";
+}
+.fa-child:before {
+  content: "\f1ae";
 }

@@ -114,11 +114,11 @@
     overflow: hidden;
 }
 
-.gallery-item .gallery-details h5 {
-    margin: 0;
-    font-size: 1em;
+.gallery-item .gallery-details h4 {
+   
+    /*font-size: 1em;*/
     font-weight: 700;
-    position: relative;
+    
 }
 
 .gallery-item .gallery-details p {
