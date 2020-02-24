@@ -168,6 +168,11 @@
 									</div>
 								</div>
 							</div>
+							
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="panel-group" id="accordion-alt3">
 							<div class="panel">	
 								<div class="panel-heading">
 									<h4 class="panel-title">
@@ -212,65 +217,34 @@
 							</div>
 						</div>
 					</div>
-					
-					
 				</div>
 			</div>
 					<br>
 					<div class="block-heading-six">
-							<h4 class="bg-color">Our Team</h4>
-						</div>
-						<br>
-						
-						<!-- Our team starts -->
-						
-						<div class="team-six">
-							<div class="row">
-								<div class="col-md-3 col-sm-6">
-									<!-- Team Member -->
-									<div class="team-member">
-										<!-- Image -->
-										<img class="img-responsive" src="img/team1.jpg" alt="">
-										<!-- Name -->
-										<h4>Johne Doe</h4>
-										<span class="deg">Creative</span> 
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<!-- Team Member -->
-									<div class="team-member">
-										<!-- Image -->
-										<img class="img-responsive" src="img/team2.jpg" alt="">
-										<!-- Name -->
-										<h4>Jennifer</h4>
-										<span class="deg">Programmer</span> 
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<!-- Team Member -->
-									<div class="team-member">
-										<!-- Image -->
-										<img class="img-responsive" src="img/team3.jpg" alt="">
-										<!-- Name -->
-										<h4>Christean</h4>
-										<span class="deg">CEO</span> 
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<!-- Team Member -->
-									<div class="team-member">
-										<!-- Image -->
-										<img class="img-responsive" src="img/team4.jpg" alt="">
-										<!-- Name -->
-										<h4>Kerinele rase</h4>
-										<span class="deg">Manager</span> 
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Our team ends -->
-					  
+						<fieldset>
+				        <legend>疫苗接种所</legend>
+				        <form action="#">
+				            <label for="addr-show">您选择的是：
+				                <input type="text" value="" id="addr-show">
+				            </label>
+				            <br/>
+				            <select id="prov" onchange="showCity(this)">
+				                <option>=请选择省份=</option>
+				
+				            </select>
+				            <select id="city" onchange="showCountry(this)">
+				                <option>=请选择城市=</option>
+				            </select>
+				            <select id="country" onchange="selecCountry(this)">
+				                <option>=请选择县区=</option>
+				            </select>
+				            <button type="button" class="btn met1" onClick="showAddr()">确定</button>
+				        </form>
+				    </fieldset><br />
+					
+					
+					
+					</div>
 						
 					</div>
 									
@@ -303,19 +277,43 @@
 </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 
-
+<script src="js/city/city.js"></script>
+<script src="js/city/method.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script> 
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/animate.js"></script>
-<!-- Vendor Scripts -->
-<script src="js/modernizr.custom.js"></script>
-<script src="js/jquery.isotope.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/animate.js"></script>
 <script src="js/custom.js"></script>
+
+<script language="javascript" type="text/javascript">
+    $(document).ready(function(){
+        $('#exit').change(function(){    // 下拉框绑定change事件
+            var exit_code = $(this).children('option:selected').val(); // 获取下拉框选中值
+            $('#tab tbody tr').each(function() {
+                var self = $(this).children().eq(2).text(); // 获取每行第三列的值
+                if(exit_code=='all'){    // 选中all时，数据全部显示
+                    $(this).show();
+                }else{                   // 选中其他的值时，进一步判断
+                    if(self!=exit_code){ // 列中的值和选中值一致
+                        $(this).hide();  // 该行显示
+                    }else{
+                        $(this).show();
+                    }
+                }
+            });
+            var trL=$("#tab").find("tr").length-1 ; // 计算除表头外的行总数
+            var trH = $('tr:hidden').length;        // 计算隐藏的行总数
+            if(trL==trH){                           // 所有行均隐藏即没有筛选到值
+                $('#num').text('没有查询到数据');
+            }
+            var num = trL - trH;      // 计算筛选出的值的个数
+            $('#num').show();
+            $('#num span').text(num);
+        })
+    })
+ 
+</script>
+
 </body>
 </html>

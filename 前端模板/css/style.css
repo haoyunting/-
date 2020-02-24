@@ -59,6 +59,23 @@ input, button, select, textarea {
 .row.nomargin,.row-fluid.nomargin {
 	margin-bottom:0;
 }
+.show1{
+	border: 4px solid #ededed;
+    border-radius: 4px;
+    padding: 4px;
+    
+    
+	/*height: 400px;
+	*/
+}
+.contents{
+    display: none;
+}
+       
+.contents.show{
+    display:block;
+            
+}
 .about-image img {
     width: 100%;
 }
@@ -331,7 +348,6 @@ display: inline-block;
 	margin:0;
 	padding:0;
 }
-
 /*  Sliders
 ==================================== */
 /* --- flexslider --- */
