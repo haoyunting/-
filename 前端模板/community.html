@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	
+	<!-- css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="css/jcarousel.css" rel="stylesheet" />
+	<link href="css/flexslider.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/jquery-kq-nav-left.css">
+    <link href="css/jquery.convform.css" rel="stylesheet" />
+    
+</head>
+<body>
+<div id="wrapper">
+	<div class="topbar">
+  		<div class="container">
+   	 		<div class="row">
+      			<div class="col-md-12">
+        			<p class="pull-left" style="font-style: italic;opacity: 0.7;color: white;">Vaccination management system</p>
+        			<p class="pull-right"><a href="#">注册</a>&nbsp;&nbsp;&nbsp;<a href="#">登录</a></p>
+      			</div>
+    		</div>
+  		</div>
+	</div>
+	<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html" style="color: #2B96CC;"><img src="img/logo.jpg" alt="logo" style="margin-top:-3px;height: 50px;"/>&nbsp;疫苗接种管理系统</a>
+                </div>
+                
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">首页</a></li> 
+						<li><a href="introduce.html">疫苗管理</a></li>
+                        <li><a href="inoculation.html">疫苗接种</a></li>
+                        <li class="active"><a href="community.html">社区</a></li>
+                        <li><a href="contact.html">关于我们</a></li>
+                </div>
+            </div>
+        </div>
+	</header>
+
+	<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="pageTitle" >社区</h2>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	
+	<section class="section-padding">
+		<div class="container" >
+			<!--<div class="row showcase-section">-->
+			<div class="col-md-4">
+			<ul class="nav-left-container pull-right " >
+		        <li>
+		             <!--li的class为active表示点击选中 -->
+		            <a href="#">
+		                <!-- aria-hidden字符串。可选值为true和false,true表示元素隐藏(不可见)，false表示元素可见。 -->
+		                <span class="fa fa-list" aria-hidden="true"></span>
+		                <span style="font-size: 16px;">我的</span>
+		                <span aria-hidden="true"></span>
+		            </a>
+		            <ul class="nav-left-container-small">
+		               <!-- aria-expanded表示展开状态。默认为undefined, 表示当前展开状态未知。其它可选值：true表示元素是展开的；false表示元素不是展开的。 -->
+		                <li>
+		                    <a class="J_menuItem" href="#">百度ECharts</a>
+		                </li>
+		                <li>
+		                    <a class="J_menuItem" href="#">Flot</a>
+		                </li>
+		                <li>
+		                    <a class="J_menuItem" href="#">Morris.js</a>
+		                </li>
+		            </ul>
+		        </li>
+		        <li>
+		            <a href="#">
+		                <span class="fa fa-star" aria-hidden="true"></span>
+		                <span>个人信息</span>
+		                <span aria-hidden="true"></span>
+		            </a>
+		        </li>
+		        <li>
+		            <a href="#">
+		                <span class="fa fa-star" aria-hidden="true"></span>
+		                <span>修改信息</span>
+		                <span aria-hidden="true"></span>
+		            </a>
+		            
+		        </li>
+		        <li>
+		            <a href="#">
+		                <span class="fa fa-star" aria-hidden="true"></span>
+		                <span>已发表</span>
+		                <span aria-hidden="true"></span>
+		            </a>
+		            
+		        </li>
+		        <li>
+            		<a href="#">
+                	<span class="fa fa-star" aria-hidden="true"></span>
+                	<span>已回复</span>
+                	<span aria-hidden="true"></span>
+            		</a>
+        		</li>
+        		<li>
+            		<a href="#">
+                	<span class="fa fa-star" aria-hidden="true"></span>
+                	<span>帮助</span>
+                	<span aria-hidden="true"></span>
+            		</a>
+        		</li>
+    		</ul>
+			</div>
+		
+		<div class="col-md-8 col-xs-12">
+			<br><p style="font-style:italic;letter-spacing:3px;"><strong>有什么想说的?快分享下来吧~</strong></p>
+			<!--<br><textarea rows="13" cols="80" style="overflow-y: auto;"></textarea>-->
+			<br>
+			<div id="show"></div>
+				<div class="comment">
+  				<div class="com_form">
+    			<textarea rows="13" cols="80" style="overflow-y: auto;" class="input" id="saytext" name="saytext"></textarea>
+    		<p>
+      		<input type="button" class="sub_btn" value="提交">
+      		<span class="emotion">表情</span></p>
+  </div>
+</div>		</div>
+		</div>
+	</section><br><br><br>
+	<!--<section>
+	<div class="card">
+      <div class="card-body p-6">
+        <div id="demo">
+         <div class="vertical-align">
+          <div class="p-0">
+           <div class="row">
+            <div class="col-sm-12">
+              <div class="no-border">
+               <div id="chat" class="conv-form-wrapper">
+                <form method="GET" class="hidden">
+                  <select data-conv-question="Hello! 这是一个不错的聊天窗口插件，带自动回复功能，要继续吗？" name="first-question">
+                    <option value="yes">好的</option>
+                    <option value="sure">当然!</option>
+                  </select>
+                  <input type="text" name="name" data-conv-question="当然自动回复是模拟的静态数据">
+                  <input type="text" data-conv-question="当然你可以使用ajax调用后台数据库" data-no-answer="true">
+                  <input type="text" data-conv-question="看起来很棒吧" data-no-answer="true">
+                  <select name="multi[]" data-conv-question="你肯定喜欢这个聊天插件" multiple>
+                    <option value="Rock">Rock</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Country">Country</option>
+                    <option value="Classic">Classic</option>
+                  </select>
+                  <select name="programmer" data-callback="storeState" data-conv-question="更多优秀Bootstrap插件访问bootstrapmb.com">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                  <div data-conv-fork="programmer">
+                    <div data-conv-case="yes">
+                       <input type="text" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
+                    </div>
+                    <div data-conv-case="no">
+                      <select name="thought" data-conv-question="Have you ever thought about learning? Programming is fun!">
+                        <option value="yes">Yes</option>
+                        <option value="no">No..</option>
+                      </select>
+                    </div>
+                  </div>
+                  <input type="text" data-conv-question="convForm also supports regex patterns. Look:" data-no-answer="true">
+                                                <input data-conv-question="Type in your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" type="email" name="email" required placeholder="What's your e-mail?">
+                                                <input data-conv-question="Now tell me a secret (like a password)" type="password" data-minlength="6" id="senha" name="password" required placeholder="password">
+                                                <select data-conv-question="Selects also support callback functions. For example, try one of these:">
+                                                    <option value="google" data-callback="google">Google</option>
+                                                    <option value="bing" data-callback="bing">Bing</option>
+                                                </select>
+                                                <select name="callbackTest" data-conv-question="You can do some cool things with callback functions. Want to rollback to the 'programmer' question before?">
+                                                    <option value="yes" data-callback="rollback">Yes</option>
+                                                    <option value="no" data-callback="restore">No</option>
+                                                </select>
+                                                <select data-conv-question="This is it! If you like me, consider donating! If you need support, contact me. When the form gets to the end, the plugin submits it normally, like you had filled it.">
+                                                    <option value="">Awesome!</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+	<footer>	
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						<p>
+							Copyright &copy; 2016.Company name All rights reserved.More Templates - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<ul class="social-network">
+						<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+<!--						<li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+-->					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+</div>
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+<script type="text/javascript" src="js/jquery.qqFace.js"></script>
+<script src="js/city/city.js"></script>
+<script src="js/city/method.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap-tab.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/jquery.convform.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/autosize.min.js"></script>
+<script  src="js/jquery.min.js"></script>
+<script>
+        $('.nav-left-container').on('click', 'li', function () {
+            $(this).find('.glyphicon-menu-right').removeClass('glyphicon-menu-right').addClass('glyphicon-menu-down');
+            $(this).addClass('active').children('.nav-left-container-small').slideDown()
+
+            $(this).siblings().removeClass('active').children('.nav-left-container-small').slideUp()
+            $(this).siblings().find('.glyphicon-menu-down').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-right ');
+        })
+</script>
+<script type="text/javascript">
+
+$(function(){
+
+	$('.emotion').qqFace({
+
+		id : 'facebox', 
+
+		assign:'saytext', 
+
+		path:'arclist/'	//表情存放的路径
+
+	});
+
+	$(".sub_btn").click(function(){
+
+		var str = $("#saytext").val();
+
+		$("#show").html(replace_em(str));
+
+	});
+
+});
+
+//查看结果
+
+function replace_em(str){
+
+	str = str.replace(/\</g,'&lt;');
+
+	str = str.replace(/\>/g,'&gt;');
+
+	str = str.replace(/\n/g,'<br/>');
+
+	str = str.replace(/\[em_([0-9]*)\]/g,'<img src="arclist/$1.gif" border="0" />');
+
+	return str;
+
+}
+
+</script>
+
+</body>
+</html>

@@ -14,7 +14,7 @@
 	<link href="css/jcarousel.css" rel="stylesheet" />
 	<link href="css/flexslider.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
-
+<!--<link href="css/index.css" rel="stylesheet" />-->
 </head>
 <body>
 <div id="wrapper">
@@ -43,18 +43,10 @@
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">首页</a></li> 
-						<li  class="active"><a href="#">疫苗介绍</a></li>
-						<li class="dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">疫苗种类 <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="type1.html">一类疫苗</a></li>
-                            <li><a href="type2.html">二类疫苗</a></li>
-                        </ul>
-                    </li> 
-						
-                        <li><a href="about.html">疫苗接种</a></li>
-                        <li><a href="#">关于我们</a></li>
-                    </ul>
+						<li class="active"><a href="introduce.html">疫苗管理</a></li>
+                        <li><a href="inoculation.html">疫苗接种</a></li>
+                        <li><a href="community.html">社区</a></li>
+                        <li><a href="contact.html">关于我们</a></li>
                 </div>
             </div>
         </div>
@@ -64,192 +56,166 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="pageTitle" >疫苗介绍</h2>
+				<h2 class="pageTitle" >疫苗管理</h2>
 			</div>
 		</div>
 	</div>
 	</section>
 	
-	<section id="content">
+	
 	<section class="section-padding">
 		<div class="container">
 			<div class="row showcase-section">
-				<div class="col-md-5">
-					<img src="img/intro1.png" style="background-size: cover;" alt="showcase image">
-				</div>
 				<div class="col-md-7">
+					<h3>疫苗介绍</h3>          	
+         		 	<ul id="tab" class="nav nav-tabs">
+				        <li class="active"><a href="#home" data-toggle="tab">分类</a></li>
+				        <li><a href="#profile" data-toggle="tab">原理</a></li>
+				        <li><a href="#kind" data-toggle="tab">种类</a></li>
+				        <li><a href="#intention" data-toggle="tab">发展历史</a></li>
+				    </ul>
+			          <div id="myTabContent" class="tab-content"  style="letter-spacing: 0.2em;line-height: 2em;text-align:justify;height: 470px;overflow:auto;">
+			            <div class="tab-pane fade in active" id="home">
+			             <br><p>疫苗一般分为两类：预防性疫苗和治疗性疫苗。预防性疫苗主要用于疾病的预防，接受者为健康个体或新生儿；治疗性疫苗主要用于患病的个体，接受者为患者。</p> 
+						 <p>根据传统和习惯又可分为减毒活疫苗、灭活疫苗、抗毒素、亚单位疫苗（含多肽疫苗）、载体疫苗、核酸疫苗等。</p> 
+						 <br><p>中国预防接种的疫苗（vaccine）分为两类。</p>
+						 <p>第一类疫苗，是指政府免费向公民提供，公民应当依照政府的规定受种的疫苗，包括国家免疫规划确定的疫苗，省、自治区、直辖市人民政府在执行国家免疫规划时增加的疫苗，以及县级以上人民政府或者其卫生主管部门组织的应急接种或者群体性预防接种所使用的疫苗。</p>
+						 <p>第二类疫苗，是指由公民自费并且自愿受种的其他疫苗。</p>
+
+			            </div>
+			            <div class="tab-pane fade" id="profile">
+			               <br><p>疫苗是将病原微生物（如细菌、立克次氏体、病毒等）及其代谢产物，经过人工减毒、灭活或利用转基因等方法制成的用于预防传染病的自动免疫制剂。疫苗保留了病原菌刺激动物体免疫系统的特性。当动物体接触到这种不具伤害力的病原菌后，免疫系统便会产生一定的保护物质，如免疫激素、活性生理物质、特殊抗体等；当动物再次接触到这种病原菌时，动物体的免疫系统便会依循其原有的记忆，制造更多的保护物质来阻止病原菌的伤害。</p></div>
+			            <div class="tab-pane fade" id="kind">
+			            	<br><h4>一类疫苗</h4>  
+			            	<p>第一类疫苗，是指政府免费向公民提供，公民应当依照政府的规定受种的疫苗，包括国家免疫规划确定的疫苗，省、自治区、直辖市人民政府在执行国家免疫规划时增加的疫苗，以及县级以上人民政府或者其卫生主管部门组织的应急接种或者群体性预防接种所使用的疫苗。</p>
+			            	<br><h4>二类疫苗</h4>  
+			            	<p>第二类疫苗，是指由公民自费并且自愿受种的其他疫苗。</p>
+							<p>常见的二类疫苗有：口服轮状病毒疫苗、甲肝疫苗、HIB疫苗、流感疫苗、狂犬病疫苗等。</p>
+							<p>二类疫苗中有可替代一类疫苗的选择，乙肝疫苗就属于一类疫苗，但二类疫苗中也有乙肝疫苗可供选择，如进口的乙肝疫苗就是二类疫苗。</p>
+			            </div>
+			            <div class="tab-pane fade" id="intention">
+			              <br><p>疫苗的发现可谓是人类发展史上一件具有里程碑意义的事件。因为从某种意义上来说人类繁衍生息的历史就是人类不断同疾病和自然灾害斗争的历史，控制传染性疾病最主要的手段就是预防，而接种疫苗被认为是最行之有效的措施。而事实证明也是如此，威胁人类几百年的天花病毒在牛痘疫苗出现后便被彻底消灭了，迎来了人类用疫苗迎战病毒的第一个胜利，也更加坚信疫苗对控制和消灭传染性疾病的作用。此后200年间疫苗家族不断扩大发展，目前用于人类疾病防治的疫苗有20多种。</p>
+			            </div>
+			          </div>
+                	<hr />
+                	<!--<h3>疫苗名称搜索</h3>   
+					<div class="input-group"  style="width: 70%;">
+						<input type="text" class="form-control" style="width: 90%;">
+							<i class="fa fa-search" style="margin-left:-24px;width: 30px;height: 30px;line-height: 2;"></i>
+					</div><br />
+					<div style="border: 1px solid gainsboro ;height: 300px;border-radius: 15px;" >
+						
+					</div>--><h3>疫苗名称搜索</h3>  
+					<section class="list-wrap">
+        <label for="search-text" style="letter-spacing: 1px;">请输入关键字</label>
+        <input type="text" id="search-text" placeholder="" class="search-box">
+        <span class="list-count"></span>
+        <div style="border: 1px solid gainsboro ;overflow-y: auto;overflow-x: auto;margin-top:20px;height: 300px;border-radius: 15px;" >
+        <br><ul id="list">
+            <li class="in">乙肝(HepB)</li>
+            <li class="in">脊灰(PV)</li>
+            <li class="in">百白破(DPT)</li>
+            <li class="in">麻风(MR)</li>
+            <li class="in">麻腮（MM）</li>
+            <li class="in">流脑A（MenA）</li>
+            <li class="in">乙脑(减毒)JE-l</li>
+            <li class="in">甲肝(减毒)HepA-l</li>
+            <li class="in">麻疹（MV）</li>
+            <li class="in">流脑A+C（MenAC）</li>
+            <li class="in">乙脑(灭活)（JE-i）</li>
+            <li class="in">甲肝(灭活)（HepA-i）</li>
+            <li class="in">腮腺炎(Mum) </li>
+            <li class="in">气管炎(Tra)</li>
+            <li class="in">麻腮风(MMR)</li>
+            <li class="in">白破(DT)</li>
+            <li class="in">脊灰(灭活)IPV</li>
+            <li class="in">卡介苗(BCG)</li>
+            <li class="in">轮状病毒(Rot)</li>
+            <li class="in">流脑A+C+Y+W135(MenACYW135)</li>
+            <li class="in">流感疫苗(Flu)</li>
+            <li class="in">风疹(Rub)</li>
+            <li class="in">甲乙肝联合(HepAB)</li>
+            <li class="in">b型流感(Hib)</li>
+            <li class="in">流脑A+C结合(CmenAC)</li>
+            <li class="in">水痘(Var)</li>
+            <li class="in">23价肺炎(Pneu23)</li>
+            <li class="in">出血热(HF)</li>
+            <li class="in">狂犬病(Rab)</li>
+            <li class="in">狂犬病血清(RAS)</li>
+            <li class="in">伤寒(Typh)</li>
+            <li class="in">布病(Bruc)</li>
+            <li class="in">霍乱(Chol)</li>
+            <li class="in">森林脑炎(TBE)</li>
+            <li class="in">7价肺炎(Pneu7)</li>
+            <li class="in">钩体(Lep)</li>
+            <li class="in">狂犬病球蛋白(RIG)</li>
+            <li class="in">炭疽(Anth)</li>
+            <li class="in">痢疾(Dys)</li>
+            <li class="in">鼠疫(Plag)</li>
+            <li class="in">登革热(DFV)</li>
+            <span class="empty-item">无数据</span>
+        </ul>
+        </div>
+    </section>
+					<!--<img src="img/intro1.png" style="background-size: cover;" alt="showcase image">-->
+				</div>
+				<div class="col-md-5">
 					<div class="about-text">
-						<h3>百度词条</h3>
-						<p>
-							疫苗是指用各类病原微生物制作的用于预防接种的生物制品。其中用细菌或螺旋体制作的疫苗亦称为菌苗。疫苗分为活疫苗和死疫苗两种。常用的活疫苗有卡介苗，脊髓灰质炎疫苗、麻疹疫苗、鼠疫菌苗等。常用的死疫苗有百日咳菌苗、伤寒菌苗、流脑菌苗、霍乱菌苗等。
-						</p>
-						<p>
-							不同疫苗的生产时间各不相同，有的疫苗可能需要22个月才能生产出一个批次。疫苗的开发是一个漫长而复杂的过程，且成本很高。接种疫苗是预防和控制传染病最经济、有效的公共卫生干预措施，对于家庭来说也是减少成员疾病发生、减少医疗费用的有效手段。
-						</p>
-						<p>
-							据估计，免疫接种每年能避免200万至300万例因白喉、破伤风、百日咳和麻疹导致的死亡。全球疫苗接种覆盖率（全球获得推荐疫苗的儿童所占的比例）在过去几年中一直保持稳定。
-						</p>
+						<h3><i class="fa fa-file-text"></i>&nbsp;热点新闻
+							<span class="pull-right"><button style="font-size: 14px;"><a href="content.html">更多</a></button></span>
+						</h3>
+						<div>
+         					<div class="thumbnail">
+            				<img src="img/new1.PNG" alt="通用的占位符缩略图" class="pull-left img-responsive" style="width: 30%;margin-top: 18px;">
+            					<div class="caption">
+                				<h5><a href="content.html">三款新冠疫苗获批进入临床试验</a></h5>
+                				<p>中国多款新冠病毒疫苗相继获批进入临床试验引发外媒关注。有外媒称，中国在这场全球疫苗竞赛中是一个颇具竞争力的参与者...</p>
+             					</div>
+         					</div>
+         					<div class="thumbnail">
+            				<img src="img/new2.PNG" alt="通用的占位符缩略图" class="pull-left img-responsive" style="width: 30%;margin-top: 18px;">
+            					<div class="caption">
+                				<h5><a href="content.html">中国3款新冠疫苗获批临床试验</a></h5>
+                				<p>在今天下午国务院联防联控机制新闻发布会上，记者了解到，我国布局了病毒灭活疫苗、核酸疫苗、重组蛋白疫苗，腺病毒载体...</p>
+             					</div>
+         					</div>
+         					<div class="thumbnail">
+            				<img src="img/service2.jpg" alt="通用的占位符缩略图" class="pull-left img-responsive" style="width: 30%;margin-top: 18px;">
+            					<div class="caption">
+                				<h5><a href="content.html">新突破！我国新冠病毒灭活疫苗获批进入临床试验</a></h5>
+                				<p>新华社北京4月14日电 记者14日从国务院联防联控机制科研攻关组获悉，我国两款新冠病毒灭活疫苗获得国家药品监督管理局...</p>
+             					</div>
+         					</div>
+    					</div><hr />
+    					<div>
+    					<h3><i class="fa fa-plane"></i>&nbsp;研究进展
+							<span class="pull-right"><button style="font-size: 14px;"><a href="content.html">更多</a></button></span>
+						</h3>
+							<h5><a href="content.html">首个新冠疫苗动物实验数据出炉，动物实验对治疗疾病有多重要？</a></h5>
+							<p>在新冠肺炎全球大流行时，中国医学院的科学家发表了首个新冠疫苗的动物实验数据，结果乐观。如今，动物实验已成为医学实验中不可或缺的一部分，关系着人类健康甚至是动物的安全。那么，动物实验是如何进行的？管理体系又是怎样的...</p>
+						</div><hr />
+						<div>
+							<h3><i class="fa fa-link"></i>&nbsp;友情链接</h3>
+							
+            				<div class="caption col-md-4">
+                				<h6><a href="http://www.chinacdc.cn/" target="_blank">中国疾病预防控制中心</a></h6>
+                				<img src="img/itro1.png" class="img-responsive" style="height: 100px;" alt="通用的占位符缩略图">
+            				</div>
+            				<div class="caption col-md-4">
+                				<h6><a href="http://nip.chinacdc.cn/" target="_blank">中国疾控中心免疫规划中心</a></h6>
+                				<img src="img/intro2.png" class="img-responsive" style="height: 100px;" alt="通用的占位符缩略图">
+            				</div>
+            				<div class="caption col-md-4">
+                				<h6><a href="http://www.cnvax.com/" target="_blank">中国疫苗网</a></h6>
+                				<img src="img/intro3.png" class="img-responsive" style="height: 100px;" alt="通用的占位符缩略图">
+            				</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-	<div class="container">
-		<div class="about">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="block-heading-two">
-						<h3><span>原理</span></h3>
-					</div>
-					<p>
-					疫苗是将病原微生物（如细菌、立克次氏体、病毒等）及其代谢产物，经过人工减毒、灭活或利用转基因等方法制成的用于预防传染病的自动免疫制剂。疫苗保留了病原菌刺激动物体免疫系统的特性。当动物体接触到这种不具伤害力的病原菌后，免疫系统便会产生一定的保护物质，如免疫激素、活性生理物质、特殊抗体等；当动物再次接触到这种病原菌时，动物体的免疫系统便会依循其原有的记忆，制造更多的保护物质来阻止病原菌的伤害。
-					</p>	
-				</div>
-				
-				<div class="col-md-8">
-					<div class="block-heading-two col-md-12">
-						<h3>种类</h3>
-					</div>
-					<div class="col-md-6">
-						<div class="panel-group" id="accordion-alt3">
-							<div class="panel">	
-								<div class="panel-heading">
-									<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseOne-alt3">
-									<i class="fa fa-angle-right"></i> 减毒活疫苗
-									</a>
-									</h4>
-								</div>
-								<div id="collapseOne-alt3" class="panel-collapse collapse">
-									<div class="panel-body">
-									这一类的病毒疫苗多具有超过90%的效力，其保护作用通常延续多年。它的突出优势是病原体在宿主复制产生一个抗原刺激，抗原数量、性质和位置均与天然感染相似，所以免疫原性一般很强，甚至不需要加强免疫。这种突出的优势同时也存在潜在的危险性：在免疫力差的部分个体可引发感染；突变可能恢复毒力。后者随着病原毒力的分子基础的认识可更合理地进行减毒，可能使其减毒更为确实并不能恢复毒力。
-									</div>
-								</div>
-							</div>
-							<div class="panel">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseTwo-alt3">
-									<i class="fa fa-angle-right"></i>灭活疫苗
-									</a>
-									</h4>
-								</div>
-								<div id="collapseTwo-alt3" class="panel-collapse collapse">
-									<div class="panel-body">
-										与减毒活疫苗相比灭活疫苗采用的是非复制性抗原（死疫苗），因此，其安全性好，但免疫原性也变弱，往往必须加强免疫。需要注意的是，并不是所有病原体经灭活后均可以成为高效疫苗：其中一些疫苗是高效的，如索尔克注射用脊髓灰质炎疫苗（IPV）或甲肝疫苗；其它则是一些低效、短持续期的疫苗，如灭活后可注射的霍乱疫苗，几乎已被放弃；还有一些部分灭活疫苗的效力低，需要提高其保护率和免疫的持续期，如传统的灭活流感和伤寒疫苗。这些低效疫苗大多数将被新型疫苗代替。
-									</div>
-								</div>
-							</div>
-							<div class="panel">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseThree-alt3">
-										<i class="fa fa-angle-right"></i> 类毒素疫苗
-										</a>
-									</h4>
-								</div>
-								<div id="collapseThree-alt3" class="panel-collapse collapse">
-									<div class="panel-body">
-										当疾病的病理变化主要是由于强力外毒素或肠毒素引起时，类毒素疫苗具有很大的意义，如破伤风和白喉的疫苗。一般来说，肠毒素的类毒素很少成功。然而肠毒素型大肠杆菌的热稳定性肠毒素（LT）经遗传改造的去毒变构体，有希望成为有效的旅行者腹泻疫苗。霍乱毒素（CT）对应的突变可能成为更为重要的疫苗。这两种毒素的变异体甚至可以诱导很好的粘膜免疫，也是有希望的粘膜免疫佐剂。
-									</div>
-								</div>
-							</div>
-							<div class="panel">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseFour-alt3">
-										<i class="fa fa-angle-right"></i> 亚单位疫苗与多肽疫苗
-										</a>
-									</h4>
-								</div>
-								<div id="collapseFour-alt3" class="panel-collapse collapse">
-									<div class="panel-body">
-									DNA重组技术使得获取大量纯抗原分子成为可能。这与以病原体为原料制备的疫苗相比在技术上发生了革命性变化，使得质量更易控制，价格也更高。从效果来看，有些亚单位疫苗，如非细胞百日咳、HBsAg等，在低剂量就具有高免疫原性；而另外一些疫苗的免疫力则较低，要求比铝盐更强的佐剂。
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="panel-group" id="accordion-alt3">
-							<div class="panel">	
-								<div class="panel-heading">
-									<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseOne-alt3">
-									<i class="fa fa-angle-right"></i> 载体疫苗
-									</a>
-									</h4>
-								</div>
-								<div id="collapseFive-alt3" class="panel-collapse collapse">
-									<div class="panel-body">
-									载体疫苗将抗原基因通过无害的微生物这种载体进入体内诱导免疫应答。它的特点是组合了减毒活疫苗强有力的免疫原性和亚单位疫苗的准确度两个优势。这种活载体疫苗的一个显著好处是可以有效在体内诱导细胞免疫，这在目前诱导细胞免疫方法还不够好、细胞免疫在一些疾病又特别重要的背景下显得很有前景。在试验中使用的重要载体有牛痘病毒的变体、脊髓灰质炎病毒、禽痘病毒、腺病毒、疱疹病毒、沙门菌、志贺菌等。也可以同时构建一个或多个细胞因子基因，这样可增强免疫反应或者改变免疫反应方向。
-									</div>
-								</div>
-							</div>
-							<div class="panel">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseTwo-alt3">
-									<i class="fa fa-angle-right"></i>核酸疫苗
-									</a>
-									</h4>
-								</div>
-								<div id="collapseSix-alt3" class="panel-collapse collapse">
-									<div class="panel-body">
-										核酸疫苗也称之为DNA疫苗或裸DNA疫苗。它与活疫苗的关键不同之处是编码抗原的DNA不会在人或动物体内复制。核酸疫苗应包含一个能在哺乳细胞高效表达的强启动子元件例如人巨细胞病毒的中早期启动子；同时也需含有一个合适的mRNA转录终止序列。肌内注射后，DNA进入胞浆，然后到达肌细胞核，但并不整合到基因组。作为基因枪方法的靶细胞，肌细胞和树突状细胞均没有高速的分裂增殖现象，他们与质粒也没有高度的同源，故同源重组可能性较小。
-									</div>
-								</div>
-							</div>
-							<div class="panel">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseThree-alt3">
-										<i class="fa fa-angle-right"></i> 可食用的疫苗
-										</a>
-									</h4>
-								</div>
-								<div id="collapseSeven-alt3" class="panel-collapse collapse">
-									<div class="panel-body">
-										此类疫苗的载体是采用可食用的植物如马铃薯、香蕉、番茄的细胞，通过食用其果实或其它成分而启动保护性免疫反应。植物细胞作为天然生物胶囊可将抗原有效递送到粘膜下淋巴系统。这是目前为数不多的有效启动粘膜免疫的形式。因此，对于粘膜感染性疾病有很好的发展前景。
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-					<br>
-					<div class="block-heading-six">
-						<fieldset>
-				        <legend>疫苗接种所</legend>
-				        <form action="#">
-				            <label for="addr-show">您选择的是：
-				                <input type="text" value="" id="addr-show">
-				            </label>
-				            <br/>
-				            <select id="prov" onchange="showCity(this)">
-				                <option>=请选择省份=</option>
-				
-				            </select>
-				            <select id="city" onchange="showCountry(this)">
-				                <option>=请选择城市=</option>
-				            </select>
-				            <select id="country" onchange="selecCountry(this)">
-				                <option>=请选择县区=</option>
-				            </select>
-				            <button type="button" class="btn met1" onClick="showAddr()">确定</button>
-				        </form>
-				    </fieldset><br />
-					
-					
-					
-					</div>
-						
-					</div>
-									
-				</div>
-	</section>
+	</section><br>
+	
 	<footer>	
 	<div id="sub-footer">
 		<div class="container">
@@ -276,10 +242,12 @@
 	</footer>
 </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-
+<script type="text/javascript" src='js/jquery.min.js'></script>
+<script type="text/javascript" src="js/index.js"></script>
 <script src="js/city/city.js"></script>
 <script src="js/city/method.js"></script>
 <script src="js/jquery.js"></script>
+<script src="js/bootstrap-tab.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider.js"></script>

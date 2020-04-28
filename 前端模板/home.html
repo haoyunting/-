@@ -12,6 +12,14 @@
 	<link href="css/jcarousel.css" rel="stylesheet" />
 	<link href="css/flexslider.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
+	<style type="text/css">
+		.contents show {
+			display: block;
+		}
+		.contents2{
+			display: none;
+		}
+	</style>
 </head>
 <body>
 <div id="wrapper">
@@ -35,7 +43,7 @@
         </div>
 	</header>
 	
-	<section id="content">
+	<section id="content1">
 		<div class="container content show1">		
 			<div class="row"> 
 				<div class="col-md-8">
@@ -45,7 +53,7 @@
 					<form class="login-form" id="login">
 					
 					<h3> <button class="btn1 active">登录</button>
-						<span class="pull-right"><button class="btn1">注册</button></span>
+						<span class="pull-right"><button class="btn2">注册</button></span>
 					<hr style="border-top: 2px solid rgba(0, 0, 0, 0.1);"/>
 					</h3>
 					
@@ -75,7 +83,7 @@
 					</div>
 					
 					</div>
-					<div class="contents">
+					<div class="contents2">
 					<h6>
 						<label for="inputName">用户名</label>
 						<input type="text" name="name" class="form-control" id="inputName" placeholder="只能为数字、英文字母,特殊字符不可以使用" />
@@ -132,25 +140,33 @@
 
  <script>
 　　　　　//获取页面的每个按钮
-        var btns = document.getElementsByClassName("btn1")
+        var btns = document.getElementsByClassName("btn1");
+         var btns2 = document.getElementsByClassName("btn2");
 　　　　　//获取内容盒子
-        var contents = document.getElementsByClassName("contents")
+        var contents = document.getElementsByClassName("contents");
+        var contents2 = document.getElementsByClassName("contents2");
 
 　　　　　//遍历每个按钮为其添加点击事件
-        for(var i=0;i<btns.length;i++){
-            btns[i].index = i;
-            btns[i].onclick = function(){
+      /*  for(var i=0;i<btns.length;i++){
+            btns[i].index = i;*/
+            btns/*[i]*/.onclick = function(){
 　　　　　　　　　　//对当前点击的按钮赋予active类名及显示当前按钮对应的内容
-                for(var j=0;j<btns.length;j++){
-                    btns[j].className = btns[j].className.replace(' active', '').trim();
-                    contents[j].className = contents[j].className.replace(' show', '').trim();
-                }
-                this.className = this.className + ' active';
+              /*  for(var j=0;j<btns.length;j++){*/
+                  /*  btns[j].className = btns[j].className.replace(' active', '').trim();
+                    contents[j].className = contents[j].className.replace(' show', '').trim();*/
+                   contents.style.display='';
+                   contents2.style.display='none';
+                /* }
+               this.className = this.className + ' active';
                 contents[this.index].className = contents[this.index].className + ' show';
-            };
+            };*/
 
         }
-
+			btns2.onclick=function(){
+				 
+                contents.style.display = 'none';
+                contents2.style.display = 'block';
+			}
 
     </script>
 

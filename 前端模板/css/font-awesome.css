@@ -237,6 +237,9 @@
 .fa-search-plus:before {
   content: "\f00e";
 }
+.fa-newspaper-o:before {
+  content: "\f1ea";
+}
 .fa-search-minus:before {
   content: "\f010";
 }
